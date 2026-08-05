@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.headers{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 25px;
+    height: 100px;
+    position: sticky;
+    top:0;
+}
+.headers a{
+    color: black;
+    text-decoration: none;
+    font-size: large;
+}
+
+.headers ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.headers a:hover{
+    color: gray;
+}
+
+.hero{
+    background-image: url(../assets/Frame\ 7150.png);
+    min-height: 70vh;
+    padding: 16rem 12rem;
+}
+.hero-section{
+    padding: 2rem 7rem;
+
+}
+
+.hero-subsection{
+    display:flex;
+    /*justify-content: space-between;*/
+    padding: 0.3rem;
+    gap: 20px;
+    padding-left: 10rem;
+
+}
+.hero-section h1{
+    padding-bottom:0.2rem ;
+
+}
+.hero-section p{
+    font-size: large;
+    padding-top: 0.2rem;
+}
+
+
+.hero-subsection button{
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.hero-subsection .button-one{
+    background-color: blue;
+}
+.hero-subsection .button-three{
+    background-color: rgb(55, 247, 55);
+}
+
+.property{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.sub-property{
+    padding: 4rem;
+}
+.sub-property h2{
+    font-size: 6rem;
+}
+.sub-property p{
+    padding-left: 9rem;
+}
+.property-section{
+    display: flex;
+    padding-top: 0.25rem;
+    gap: 11px;
+
+}
+.property-section button{
+    padding: 1rem;
+    border-radius: 2rem;
+
+}
+.property-section button:hover{
+    background-color: blue;
+}
+.sub-property-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    padding-top: 2rem;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.cards-image {
+  height: 150px;
+  overflow: hidden;
+}
+.card-image:hover{
+    scale:1.07 ;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid black;
+}
+.cards-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.property-details{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: blue;
+    align-items: center;
+    padding: 4rem 8rem;
+    font-size: larger;
+}
+.sub-property-details p{
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+.property-details-section{
+    padding: 1rem;
+    display: flex;
+    gap:8px
+}
+.property-details-section button{
+     padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+
+}
+.special-btn{
+    color: blue;
+}
+.special-button{
+    color: white;
+    background-color: rgb(24, 223, 24);
+}
+.selection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 4rem;
+    background-color: whitesmoke;
+}
+.service h2{
+    color:blue;
+    padding-bottom: 0.5rem;
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.btn{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.btn button{
+    padding: 0.5rem;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.493);
+    
+    padding: 7rem 4rem;
+
+}
+.footers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+.footer h4{
+    color: white;
+    font-size: larger;
+    padding-bottom:1rem;
+     padding-left: 2rem;
+}
+.footers li{
+    list-style: none;
+}
+.footers a{
+    text-decoration: none;
+    color: black;
+    padding-left:1rem ;
+
+}
+.main-footer

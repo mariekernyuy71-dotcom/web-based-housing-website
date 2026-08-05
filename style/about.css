@@ -1,0 +1,46 @@
+.card{
+    width: 80%;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    margin-left: 90px;
+}
+
+.Strength{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    padding: 2rem;
+}
+.Strength-card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 80%;
+ border-radius: 0.5rem;
+}
+.Strength-section{
+    display: flex;
+    gap: 14px;
+    padding:2rem ;
+    width: 80%;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.choice{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 1rem;
+}
+.sub-choice{
+    display:flex ;
+    padding: 1rem;
+    width:;
+    gap:14px;
+}

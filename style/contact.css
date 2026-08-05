@@ -1,0 +1,52 @@
+body{
+    background-color: whitesmoke;
+}
+.contact{
+    text-align: center;
+    padding: 2rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid gray;
+    margin-left: 300px;
+
+}
+
+.form h3{
+text-align: center;
+padding-top: 5rem;
+}
+.form-section{
+    display: flex;
+    flex-direction: column;
+    padding: 8rem;
+    border-radius: 0.5rem;
+}
+.form-section label{
+    padding: 0.5rem;
+}
+.form-section button{
+    margin-top: 1rem;
+    padding-bottom: O.5rem;
+}
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 4rem;
+    width: 50%;
+    margin-left: 300px;
+    margin-top: 30px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap:14px;
+    width: 50%;
+     margin-left: 300px;
+}

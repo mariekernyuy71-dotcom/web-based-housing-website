@@ -1,0 +1,46 @@
+
+.browse {
+  background-color: #f5f5f5;
+  padding: 40px 20px;       
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.browse-properties {
+  margin-bottom: 20px;
+}
+
+
+.filter {
+  background: #ffffff;  
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.filter h4 {
+  width: 100%; 
+  margin: 0 0 10px 0;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.filter-group label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.filter-group select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 160px;
+}
