@@ -1,4 +1,4 @@
-const headerHTML=`
+const headerHTML = `
 
     <header class="headers">
         <div class="logo">
@@ -9,10 +9,15 @@ const headerHTML=`
                  <li><a href="../pages/about.html">About</a></li>
                   <li><a href="../pages/properties.html">Properties</a></li>
                   <li><a href="../pages/contact.html">Contact Us</a></li>
+                  <li><a href="../pages/services.html">Services</a></li>
             </ul>
+            <div class="auth-buttons">
+            <a href="../pages/login.html" class="btn-login">Login</a>
+            <a href="../pages/register.html" class="btn-register">Register</a>
+            </div>
     </header>`;
 
-    const footerHTML=  `
+const footerHTML = `
 <footer class="footer">
 
     <div class=footers>
@@ -49,11 +54,3 @@ window.addEventListener("DOMContentLoaded", () => {
   if (headerContainer) headerContainer.innerHTML = headerHTML;
   if (footerContainer) footerContainer.innerHTML = footerHTML;
 });
-
-
-  const viewBtn = document.getElementById("view-properties");
-if(view-properties){
-  viewBtn.addEventListener("click", ()=>{
-    window.location.href="../pages/properties.html";
-});
-}

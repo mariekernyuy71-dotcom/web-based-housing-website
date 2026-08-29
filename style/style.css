@@ -4,16 +4,31 @@
     box-sizing: border-box;
 }
 
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
 .headers{
     background-color: white;
     display: flex;
+    bortder-bottom: 1px solid #e2e8f0;
     justify-content: space-between;
-    text-align: center;
-    padding: 25px;
-    height: 100px;
-    position: sticky;
+    align-items: center;
+    padding: 0.5%;
+    weidth: 100px;
+    box-sizing: border-box;
+    height: 80px;
+    position: fixed;
     top:0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
+
 .headers a{
     color: black;
     text-decoration: none;
@@ -29,6 +44,11 @@
     color: gray;
 }
 
+.auth-buttons{
+    display:flex;
+    align-items: center;
+    gap:12px;
+}
 .hero{
     background-image: url(../assets/Frame\ 7150.png);
     min-height: 70vh;
@@ -71,8 +91,8 @@
 .property{
     display:flex;
     flex-direction: column;
-    justify-content: center;
     align-items:center;
+    width: 100%;
 }
 .sub-property{
     padding: 4rem;
@@ -83,12 +103,16 @@
 .sub-property p{
     padding-left: 9rem;
 }
-.property-section{
+/* .property-section{
     display: flex;
+    flex-wrap: wrap
+    justify-content : center;
     padding-top: 0.25rem;
     gap: 11px;
 
-}
+} */
+
+
 .property-section button{
     padding: 1rem;
     border-radius: 2rem;
@@ -97,14 +121,48 @@
 .property-section button:hover{
     background-color: blue;
 }
-.sub-property-section{
+/* .sub-property-section{
     display: flex;
     flex-wrap: wrap;
     gap:2rem;
     padding-top: 2rem;
     justify-content: center;
-    max-width: 800px;
+    margin: 10rem;
     margin: 0 auto;
+} */
+
+.price-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 120px;
+  position: relative
+  z-index: 10;
+}
+
+.price-box label {
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+#priceSelect {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 200px; /* Gives the dropdown a clean fixed width */
+}
+.sub-property-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:2rem;
+    padding-top: 2rem;
+    justify-content: center;
+    margin: 10rem;
+    margin: 2rem auto;
 }
 .cards-image {
   height: 150px;
@@ -115,10 +173,11 @@
 }
 .cards{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    width: 300px;
+    /* width: 10rem; */
     border: 1px solid black;
+    border-radius: :8px;
+    overflow:hidden;
 }
 .cards-description {
   display: flex;
@@ -186,21 +245,7 @@
     color:blue;
     padding-bottom: 0.5rem;
 }
-.location{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2rem;
-}
 
-.btn{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-.btn button{
-    padding: 0.5rem;
-}
 .footer{
     display: flex;
     flex-direction: column;
@@ -233,4 +278,8 @@
     padding-left:1rem ;
 
 }
-.main-footer
+.price-btn.active {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}

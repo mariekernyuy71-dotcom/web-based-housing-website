@@ -6,8 +6,8 @@
     <title>HOUSE-LISTING_SITE</title>
     <link rel="stylesheet" href="./style/style.css">  
 <body>
-    <div id="header" class="headers"></div>
-    <!--
+    <div id="header"></div>
+<!--     
     <header class="header">
         <div class="logo">
             <a href="#">M&C House</a>
@@ -19,17 +19,17 @@
                   <li><a href="./pages/contact.html">Contact Us</a></li>
             </ul>
 
-    </header>-->
+    </header> -->
 
 <section class="hero">
     <div class="hero-section">
-    <h1>Buy, Sell & Rent Properties With M&C House</h1>
+    <h1>Buy & Rent Properties With M&C House</h1>
     <p>Reliable service helping you find the rignt propert quickly</p>
     </div>
      <div class="hero-subsection">
-        <button id="view-properties" class="button-one">View Properties</button>
-        <button id="call-now" class="button-two"> Call Now</button>
-        <button id="Whatsapp" class="button-three"> Whatsapp</button>
+        <button id="view-btn" class="button-one">View Properties</button>
+        <button id="whatsapp-btn" class="button-three"> Whatsapp</button>
+         <button id="call-btn" class="button-two"> Call Now</button>
      </div>
 </section>
 
@@ -39,125 +39,152 @@
     <h2>Featured Properties</h2>
     <p>Browse our handpicked selection of properties in M&C House</p>
     </div>
+    <!--
     <div class="property-section">
-        <button>2.00,000 CFA</button>
-        <button>4.00,000 CFA</button>
-        <button>50,000 CFA</button>
-        <button>6.00,000 CFA</button>
-        <button>10,000,000 CFA</button>
-        <button>20, 000, 000 CFA</button>
-        <button>1.000,000 CFA</button>
+         <button class="price-btn" data-price="all">All Properties</button>
+        <button class="price-btn" data-price="200000">200,000 cfa</button>
+        <button class="price-btn" data-price="400000">4.00,000 CFA</button>
+        <button class="price-btn" data-price="50000">50,000 CFA</button>
+        <button class="price-btn" data-price="600000">6.00,000 CFA</button>
+        <button class="price-btn" data-price="10000000">10,000,000 CFA</button>
+        <button class="price-btn" data-price="20000000">20, 000, 000 CFA</button>
+        <button class="price-btn" data-price="1000000">1.000,000 CFA</button>
     </div>
+-->
+
+<!-- Filter Bar: Category Pills & Price Dropdown -->
+<div class="property-section">
+  <!-- Category Pills -->
+  <div class="category-buttons">
+    <button class="cat-btn active" data-category="all">All</button>
+    <button class="cat-btn" data-category="Student Cité">Student Cité</button>
+    <button class="cat-btn" data-category="Plot">Plot</button>
+    <button class="cat-btn" data-category="House">House</button>
+    <button class="cat-btn" data-category="Apartment">Apartment</button>
+    <button class="cat-btn" data-category="Studio">Studio</button>
+  </div>
+
+  <!-- Price Filter Dropdown -->
+  <div class="price-box">
+    <label for="priceSelect">FILTER BY PRICE:</label>
+    <select id="priceSelect">
+      <option value="all">All</option>
+      <option value="150000">Under 150,000 CFA</option>
+      <option value="500000">Under 500,000 CFA</option>
+      <option value="2000000">Under 2,000,000 CFA</option>
+      <option value="10000000">Under 10,000,000 CFA</option>
+      <option value="100000000">Above 10,000,000 CFA</option>
+
+    </select>
+  </div>
+</div>
     <div class="sub-property-section">
-        <div class="cards">
+        
+    <p id="no-results" style="display: none; text-align: center; margin-top: 20px; font-weight: bold;">
+      No properties available in this price range.
+    </p>
+        <div class="cards" data-price="200000">
             <div class="cards-image">
-        <img class="card-image" src="./assets/unsplash_Hh18POSx5qk.png" alt="">
+        <img class="card-image" src="./assets/images/image-one.jpeg" alt="">
         </div>
         <div class="cards-description">
-        <h3>Featured</h3>
-        <p>Modern Apartment</p>
-        <p>Price</p>
-        <p>Location</p>
-        <p>Size</p>
+        <h3>Cite</h3>
+        <p>Price: 35 millions</p>
+        <p>Location: Bambili</p>
         <button class="btn">View Details</button>
+        <button class="btn">WhatsApp</button>
         </div>
         </div>
         
-        <div class="cards">
+        <div class="cards" data-price="50000">
           <div class="cards-image">
           <img class="card-image" src="./assets/unsplash_xaqsFfoEq3o.png" alt="">
           </div>
           <div class="cards-description">
-        <h3>Featured</h3>
-        <p>Modern Apartment</p>
-        <p>Price</p>
-        <p>Location</p>
-        <p>Size</p>
+        <p>Studio</p>
+        <p>Price:45k CFA</p>
+        <p>Location: mile 2 Nkwen</p>
          <button class="btn">View Details</button>
+         <button class="btn">WhatsApp</button>
         </div>
         </div>
 
-        <div class="cards">
+        <div class="cards" data-price="200000">
             <div class="cards-image">
           <img class="card-image" src="./assets/Frame 7164.png" alt="">
           </div>
           <div class="cards-description">
-        <h3>Featured</h3>
-        <p>Modern Apartment</p>
-        <p>Price</p>
-        <p>Location</p>
-        <p>Size</p>
+        <p>Studio</p>
+        <p>Price: 50k CFA</p>
+        <p>Location: mile 2 Nkwen</p>
          <button class="btn">View Details</button>
+         <button class="btn">WhatsApp</button>
         </div>
         </div>
 
-        <div class="cards">
+        <div class="cards" data-price="200000">
             <div class="cards-image">
           <img class="card-image"  src="./assets/Frame 7167.png" alt="">
           </div>
           <div class="cards-description">
-        <h3>Featured</h3>
-        <p>Modern Apartment</p>
-        <p>Price</p>
-        <p>Location</p>
+        <p>studio</p>
+        <p>Price:70k CFA</p>
+        <p>Location: Ntarikon</p>
         <p>Size</p>
          <button class="btn">View Details</button>
+         <button class="btn">WhatsApp</button>
         </div>
         </div>
 
-        <div class="cards">
+        <div class="cards" data-price="400000">
             <div class="cards-image">
           <img class="card-image" src="./assets/unsplash_ZzYtM3-zHUc.png" alt="">
           </div>
           <div class="cards-description">
-        <h3>Featured</h3>
-        <p>Modern Apartment</p>
-        <p>Price</p>
-        <p>Location</p>
-        <p>Size</p>
+        <p>House</p>
+        <p>Price: 20M CFA</p>
+        <p>Location: mile 6 Mankon</p>
          <button class="btn">View Details</button>
+         <button class="btn">WhatsApp</button>
         </div>
         </div>
 
-        <div class="cards">
+        <div class="cards" data-price="400000">
         <div class="cards-image">
           <img class="card-image" src="./assets/unsplash_PG8NyM_Mcts.png" alt="">
           </div>
           <div class=""cards-description">
-        <h3>Featured</h3> 
-        <p>Modern Apartment</p>
-        <p>Price</p>
-        <p>Location</p>
-        <p>Size</p>
+        <p>House</p>
+        <p>Price: 12.5M</p>
+        <p>Location: mile 4 Nkwen</p>
          <button class="btn">View Details</button>
+         <button class="btn">WhatsApp</button>
         </div>
         </div>
 
-        <div class="cards">
+        <div class="
+          cards" data-price="600000">
            <div class="cards-image">
           <img class="card-image" src="./assets/Rectangle.png" alt="">
            </div>
            <div class="cards-description">
-        <h3>Featured</h3>
-        <p>Modern Apartment</p>
-        <p>Price</p>
-        <p>Location</p>
-        <p>Size</p>
+        <p>House</p>
+        <p>Price: 150M CFA</p>
+        <p>Location: UPSTATION</p>
          <button class="btn">View Details</button>
+         <button class="btn">WhatsApp</button>
         </div>
         </div>
-          
-        <div class="cards">
+        <div class="cards" data-price="1000000">
             <div class="cards-image">
           <img class="card-image" src="./assets/unsplash_DyFjxmHt3Es.png" alt="">
           </div>
           <div class="cards-description">
-        <h3>Featured</h3>
-        <p>Modern Apartment</p>
-        <p>Price</p>
-        <p>Location</p>
-        <p>Size</p>
+        <p>Plot</p>
+        <p>Price: 8M CFA</p>
+        <p>Location: mile 6 Nkwen</p>
          <button class="btn">View Details</button>
+         <button class="btn">WhatsApp</button>
         </div>
         </div>
 
@@ -169,8 +196,9 @@
     <div class="sub-property-details">
     <h2>Call or Whatsapp for Property Detials</h2>
     <p>Get instance response from our team</p>
+
     <div class="property-details-section">
-        <button class="special-btn">+237XXXXXXXXX</button>
+        <button id="specialBtn" class="special-btn">+237XXXXXXXXX</button>
         <button class="special-button">WhatsApp Now</button>
     </div>
 </section>
@@ -221,23 +249,6 @@
         <p>Reliable and  honest real estate guidiance</p>
     </div>
 </section>
-<section class="location">
-    <div>
-    <h3>Popular Locations In Bamenda</h3>
-    </div>
-
-    <div class="btn">
-    <button>1</button>
-     <button>1</button>
-      <button>1</button>
-       <button>1</button>
-        <button>1</button>
-         <button>1</button>
-          <button>1</button>
-           <button>1</button>
-           </div>
-
-</section>
 
 <div id="footer"></div>
 <!--
@@ -267,6 +278,8 @@
      <p> &Copy; 2026 M&C House.All rights Reserved</p>
     </div>
 </footer>-->
-<script src="../script/index.js"></script>
+
+<script src="./script/index.js"></script>
+<script src="./script/home.js"></script>
 </body>
 </html>
