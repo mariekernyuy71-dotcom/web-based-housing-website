@@ -33,7 +33,6 @@
      </div>
 </section>
 
-
 <section class="property">
     <div class="sub-property">
     <h2>Featured Properties</h2>
@@ -50,21 +49,17 @@
         <button class="price-btn" data-price="20000000">20, 000, 000 CFA</button>
         <button class="price-btn" data-price="1000000">1.000,000 CFA</button>
     </div>
--->
-
-<!-- Filter Bar: Category Pills & Price Dropdown -->
+    -->
 <div class="property-section">
-  <!-- Category Pills -->
   <div class="category-buttons">
     <button class="cat-btn active" data-category="all">All</button>
-    <button class="cat-btn" data-category="Student Cité">Student Cité</button>
+    <button class="cat-btn" data-category="Student Cite">Student Cité</button>
     <button class="cat-btn" data-category="Plot">Plot</button>
     <button class="cat-btn" data-category="House">House</button>
     <button class="cat-btn" data-category="Apartment">Apartment</button>
     <button class="cat-btn" data-category="Studio">Studio</button>
   </div>
 
-  <!-- Price Filter Dropdown -->
   <div class="price-box">
     <label for="priceSelect">FILTER BY PRICE:</label>
     <select id="priceSelect">
@@ -73,7 +68,7 @@
       <option value="500000">Under 500,000 CFA</option>
       <option value="2000000">Under 2,000,000 CFA</option>
       <option value="10000000">Under 10,000,000 CFA</option>
-      <option value="100000000">Above 10,000,000 CFA</option>
+      <option value="above-10000000">Above 10,000,000 CFA</option>
 
     </select>
   </div>
@@ -83,108 +78,115 @@
     <p id="no-results" style="display: none; text-align: center; margin-top: 20px; font-weight: bold;">
       No properties available in this price range.
     </p>
-        <div class="cards" data-price="200000">
+        <div class="cards" data-category="Student-cite" data-price="35000000">
             <div class="cards-image">
-        <img class="card-image" src="./assets/images/image-one.jpeg" alt="">
+                <span class="status-badge rent">For Sale</span>
+        <img class="card-image" src="../assets/images/image-one.jpeg" alt="">
         </div>
         <div class="cards-description">
         <h3>Cite</h3>
         <p>Price: 35 millions</p>
         <p>Location: Bambili</p>
-        <button class="btn">View Details</button>
         <button class="btn">WhatsApp</button>
+        <button class="save-btn" type="button">Save Properties</button>
         </div>
         </div>
         
-        <div class="cards" data-price="50000">
+        <div class="cards" data-category="studio" data-price="45000">
           <div class="cards-image">
-          <img class="card-image" src="./assets/unsplash_xaqsFfoEq3o.png" alt="">
+            <span class="status-badge rent">For Rent</span>
+          <img class="card-image" src="./assets/images/image-two.jpeg" alt="">
           </div>
           <div class="cards-description">
         <p>Studio</p>
         <p>Price:45k CFA</p>
         <p>Location: mile 2 Nkwen</p>
-         <button class="btn">View Details</button>
          <button class="btn">WhatsApp</button>
+         <button class="save-btn" type="button">Save Properties</button>
         </div>
         </div>
 
-        <div class="cards" data-price="200000">
+        <div class="cards" data-category="studio" data-price="70000">
             <div class="cards-image">
-          <img class="card-image" src="./assets/Frame 7164.png" alt="">
+                <span class="status-badge rent">For Rent</span>
+          <img class="card-image" src="./assets/images/image-three.jpg" alt="">
           </div>
           <div class="cards-description">
         <p>Studio</p>
         <p>Price: 50k CFA</p>
         <p>Location: mile 2 Nkwen</p>
-         <button class="btn">View Details</button>
          <button class="btn">WhatsApp</button>
+         <button class="save-btn" type="button">Save Properties</button>
         </div>
         </div>
 
-        <div class="cards" data-price="200000">
+        <div class="cards" data-category="studio" data-price="20000000">
             <div class="cards-image">
-          <img class="card-image"  src="./assets/Frame 7167.png" alt="">
+                <span class="status-badge rent">For Rent</span>
+          <img class="card-image"  src="./assets/images/image-four.jpg" alt="">
           </div>
           <div class="cards-description">
         <p>studio</p>
         <p>Price:70k CFA</p>
         <p>Location: Ntarikon</p>
         <p>Size</p>
-         <button class="btn">View Details</button>
          <button class="btn">WhatsApp</button>
+         <button class="save-btn" type="button">Save Properties</button>
         </div>
         </div>
 
-        <div class="cards" data-price="400000">
+        <div class="cards" data-category="House" data-price="12500000">
             <div class="cards-image">
-          <img class="card-image" src="./assets/unsplash_ZzYtM3-zHUc.png" alt="">
+                <span class="status-badge rent">For Sale</span>
+          <img class="card-image" src="./assets/images/image-five.jpg" alt="">
           </div>
           <div class="cards-description">
         <p>House</p>
         <p>Price: 20M CFA</p>
         <p>Location: mile 6 Mankon</p>
-         <button class="btn">View Details</button>
          <button class="btn">WhatsApp</button>
+         <button class="save-btn" type="button">Save Properties</button>
         </div>
         </div>
 
-        <div class="cards" data-price="400000">
+        <div class="cards" data-category="house" data-price="12500000">
         <div class="cards-image">
-          <img class="card-image" src="./assets/unsplash_PG8NyM_Mcts.png" alt="">
+            <span class="status-badge rent">For Sale</span>
+          <img class="card-image" src="./assets/images/image-six.jpg" alt="">
           </div>
           <div class=""cards-description">
         <p>House</p>
         <p>Price: 12.5M</p>
         <p>Location: mile 4 Nkwen</p>
-         <button class="btn">View Details</button>
          <button class="btn">WhatsApp</button>
+         <button class="save-btn" type="button">Save Properties</button>
         </div>
         </div>
 
-        <div class="
-          cards" data-price="600000">
+        <div class="cards" data-category="" data-price="150000000">
            <div class="cards-image">
-          <img class="card-image" src="./assets/Rectangle.png" alt="">
+            <span class="status-badge rent">For Sale</span>
+          <img class="card-image" src="./assets/images/image-seven.jpg" alt="">
            </div>
            <div class="cards-description">
         <p>House</p>
         <p>Price: 150M CFA</p>
         <p>Location: UPSTATION</p>
-         <button class="btn">View Details</button>
          <button class="btn">WhatsApp</button>
+         <button class="save-btn" type="button">Save Properties</button>
         </div>
         </div>
-        <div class="cards" data-price="1000000">
+        <div class="cards" data-category="" data-price="8000000">
             <div class="cards-image">
-          <img class="card-image" src="./assets/unsplash_DyFjxmHt3Es.png" alt="">
+                <span class="status-badge rent">For Sale</span>
+          <img class="card-image" src="./assets/images/image-eight.jpg" alt="">
           </div>
           <div class="cards-description">
         <p>Plot</p>
         <p>Price: 8M CFA</p>
         <p>Location: mile 6 Nkwen</p>
-         <button class="btn">View Details</button>
          <button class="btn">WhatsApp</button>
+         <button class="save-btn" type="button">Save Properties</button>
         </div>
         </div>
 
@@ -198,7 +200,7 @@
     <p>Get instance response from our team</p>
 
     <div class="property-details-section">
-        <button id="specialBtn" class="special-btn">+237XXXXXXXXX</button>
+        <button id="specialBtn" class="special-btn">Call</button>
         <button class="special-button">WhatsApp Now</button>
     </div>
 </section>
@@ -234,7 +236,7 @@
 
 </section>
 
-<section class="service">
+<section class="service" data>
     <div>
     <h2>Local Area Expertise</h2>
     <p>Deep knowledge of Cameroon's Location</p>

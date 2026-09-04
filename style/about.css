@@ -1,9 +1,22 @@
+body{
+    background-color: #f8fafc;
+    line-height: 1.6;
+}
+h1, h2, h3{
+    color: #0f172a;
+    text-align: center;
+    font-weight: 700;
+}
+
+
 .card{
     width: 80%;
     padding: 30px;
     border-radius: 20px;
     border: 1px solid gray;
     margin-left: 90px;
+    margin-top: 80px;
+    background-color: #D6EAF8;
 }
 
 .Strength{
@@ -20,10 +33,13 @@
     padding: 1rem;
     width: 80%;
  border-radius: 0.5rem;
+ background-color: #D6EAF8;
 }
 .Strength-section{
     display: flex;
-    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     padding:2rem ;
     width: 80%;
 }

@@ -13,7 +13,7 @@ body {
     gap: 2em;
 }
 .headers{
-    background-color: white;
+    background-color: #F8F9FA;
     display: flex;
     bortder-bottom: 1px solid #e2e8f0;
     justify-content: space-between;
@@ -30,7 +30,7 @@ body {
 }
 
 .headers a{
-    color: black;
+    color: #1E3A8A;
     text-decoration: none;
     font-size: large;
 }
@@ -165,6 +165,8 @@ body {
     margin: 2rem auto;
 }
 .cards-image {
+    position: relative;
+    overflow: hidden;
   height: 150px;
   overflow: hidden;
 }
@@ -193,12 +195,32 @@ body {
   transition-duration: 500ms;
   transition-timing-function: ease-in-out;
 }
+.status-badge{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #2563eb;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    z-index: 2;
+}
 
 .btn {
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
+  background-color:  rgb(55, 247, 55);
 }
 
+.save-btn{
+      padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #2563eb;
+  color: white;
+
+}
 .property-details{
     display:flex;
     flex-direction: column;
@@ -245,6 +267,8 @@ body {
     color:blue;
     padding-bottom: 0.5rem;
 }
+
+
 
 .footer{
     display: flex;

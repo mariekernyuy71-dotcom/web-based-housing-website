@@ -10,88 +10,45 @@
 <body>
 <!--header-->
 <div id="header"></div>
-<!--
-<section class="browse">
-    <div class="browse-properties">
-    <h1>Browse Properties</h1>
-    <p>Find your perfect property in bamenda with our extensive listings</p>
-    </div>
 
-    <div class="filter">
-    <h4>Filter Properties</h4>
-    <div class="property1">
-    <p>Property Type</p>
-    <label for="propertype"></label>
-    <select name="propertytype" id="propertytype">
-    <option value="Bedroom">Bedroom</option>
-    <option value="Apartment">Apartment</option>
-    <option value="Plots">PLots</option>
-    </select>
-    </div>
-    </div>
-</section>-->
-
-<section class="browse">
-  <!-- Top Box Content -->
-  <div class="browse-properties">
-    <h1>Browse Properties</h1>
-    <p>Find your perfect property in bamenda with our extensive listings</p>
+<section class="property">
+  <div class="sub-property">
+    <h2>Featured Properties</h2>
+    <p>Browse our handpicked selection of properties in M&C House</p>
   </div>
 
-  <!-- Filter Section -->
-  <div class="filter">
-    <h4>Filter Properties</h4>
-    
-    <!-- Property Type -->
-    <div class="filter-group">
-      <label for="propertytype">Property Type</label>
-      <select name="propertytype" id="propertytype">
-        <option value="all">All</option>
-        <option value="Bedroom">Self-Contain</option>
-        <option value="Apartment">Apartment</option>
-        <option value="Plots">Studio</option>
-      </select>
-    </div>
 
-
-    <!-- Bedrooms 
-    <div class="filter-group">
-      <label for="bedrooms">Bedrooms</label>
-      <select name="bedrooms" id="bedrooms">
-        <option value="all">All</option>
-        <option value="one-room">One-room</option>
-        <option value="two-rooms">Two-Rooms</option>
-      </select>
-    </div>
-     -->
-
-
-
-    <!-- Budget -->
-    <div class="filter-group">
-      <label for="budget">Budget</label>
-      <select name="budget" id="budget">
-        <option value="all">All</option>
-        <option value="low">Below 50,000 FCFA</option>
-        <option value="mid">50,000 FCFA and above</option>
-      </select>
-    </div>
+<div class="property-section">
+  <div class="category-buttons">
+    <button class="cat-btn active" data-category="all">All</button>
+    <button class="cat-btn" data-category="Student Cite">Student Cité</button>
+    <button class="cat-btn" data-category="Plot">Plot</button>
+    <button class="cat-btn" data-category="House">House</button>
+    <button class="cat-btn" data-category="Studio">Studio</button>
   </div>
+
+  <div class="price-box">
+    <label for="priceSelect">FILTER BY PRICE:</label>
+    <select id="priceSelect">
+  <option value="all" selected>All</option>
+  <option value="150000">Under 150,000 CFA</option>
+  <option value="500000">Under 500,000 CFA</option>
+  <option value="2000000">Under 2,000,000 CFA</option>
+  <option value="10000000">Under 10,000,000 CFA</option>
+  <option value="above-10000000">Above 10,000,000 CFA</option>
+</select>
+
+  </div>
+</div>
+  <div class="sub-property-section"></div>
 </section>
 
-</section>
-
-<section>
-    <h6>Showing number of Properties</h6>
-    <img src="#" alt="">
-    <p>name</p>
-    <p>Price</p>
-    <p>location</p>
-    <p>Size</p>
-</section>
 
 <!--footer-->
 <div id="footer"></div>
 <script src="../script/index.js"></script>
+
+<script src="../script/properties-data.js"></script>
+<script src="../script/properties-render.js"></script>
 </body>
 </html>

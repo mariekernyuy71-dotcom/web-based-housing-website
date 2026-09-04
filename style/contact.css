@@ -1,52 +1,109 @@
-body{
-    background-color: whitesmoke;
-}
-.contact{
-    text-align: center;
-    padding: 2rem;
-}
-.form{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    border: 1px solid gray;
-    margin-left: 300px;
 
+.form-container, .information, .quick-contact {
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border: 1px solid #e2e8f0;
+  
 }
 
-.form h3{
-text-align: center;
-padding-top: 5rem;
-}
-.form-section{
-    display: flex;
-    flex-direction: column;
-    padding: 8rem;
-    border-radius: 0.5rem;
-}
-.form-section label{
-    padding: 0.5rem;
-}
-.form-section button{
-    margin-top: 1rem;
-    padding-bottom: O.5rem;
-}
-.information{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid gray;
-    padding: 4rem;
-    width: 50%;
-    margin-left: 300px;
-    margin-top: 30px;
+.contact-hero {
+  text-align: center;
+  margin-top: 100px 
 }
 
-.contact{
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    gap:14px;
-    width: 50%;
-     margin-left: 300px;
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  width: 100%;
+}
+
+.input-group label {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.input-group input, 
+.input-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+}
+
+.input-group input:focus, 
+.input-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.information {
+  text-align: center;
+}
+
+.info-block {
+  margin-top: 15px;
+}
+
+.info-block a, .quick-btns a {
+  display: inline-block;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600;
+}
+
+.quick-contact {
+  text-align: center;
+}
+
+.quick-btns {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.call-btn, .wa-btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: #fff !important;
+}
+
+.call-btn {
+  background-color: #28a745;
+}
+
+.wa-btn {
+  background-color: #25d366;
 }
