@@ -103,14 +103,6 @@ body {
 .sub-property p{
     padding-left: 9rem;
 }
-/* .property-section{
-    display: flex;
-    flex-wrap: wrap
-    justify-content : center;
-    padding-top: 0.25rem;
-    gap: 11px;
-
-} */
 
 
 .property-section button{
@@ -121,15 +113,7 @@ body {
 .property-section button:hover{
     background-color: blue;
 }
-/* .sub-property-section{
-    display: flex;
-    flex-wrap: wrap;
-    gap:2rem;
-    padding-top: 2rem;
-    justify-content: center;
-    margin: 10rem;
-    margin: 0 auto;
-} */
+
 
 .price-box {
   display: flex;
@@ -268,42 +252,61 @@ body {
     padding-bottom: 0.5rem;
 }
 
-
-
-.footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.493);
-    
-    padding: 7rem 4rem;
-
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f2937;   
+  color: #e5e7eb;              
+  padding: 4rem 4rem 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
 }
-.footers{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5rem;
-}
-.footer h4{
-    color: white;
-    font-size: larger;
-    padding-bottom:1rem;
-     padding-left: 2rem;
-}
-.footers li{
-    list-style: none;
-}
-.footers a{
-    text-decoration: none;
-    color: black;
-    padding-left:1rem ;
 
+.footers {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-items: start;         
+  gap: 3rem;
+  width: 100%;
+  max-width: 1100px;
 }
-.price-btn.active {
-  background-color: #333;
-  color: #fff;
-  border-color: #333;
+
+.footer h4 {
+  color: white;
+  font-size: larger;
+  margin: 0 0 1rem;         
+}
+
+.footer p {
+  margin: 0 0 0.5rem;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer li {
+  margin-bottom: 0.5rem;
+}
+
+.footer a {
+  color: #e5e7eb; 
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.main-footer {
+  width: 100%;
+  max-width: 1100px;
+  text-align: center;
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #4b5563;
 }

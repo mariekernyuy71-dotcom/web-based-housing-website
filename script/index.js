@@ -16,35 +16,34 @@ const headerHTML = `
             <a href="../pages/register.html" class="btn-register">Register</a>
             </div>
     </header>`;
-
 const footerHTML = `
 <footer class="footer">
-
-    <div class=footers>
-    <div class=sub-footer>
-    <h4>M&C House</h4>
-    <p>Your trused partner in M&C House. WE help you find the perfect property</p>
+  <div class="footers">
+    <div class="sub-footer">
+      <h4>M&C House</h4>
+      <p>Your trusted partner in M&C House. We help you find the perfect property.</p>
     </div>
 
-    <div class=sub-footer>
-    <h4>Contact</h4>
-   <p> email:M&C@gmail.com"</p>
-    <p>+237xxxxxxxxx</p>
-     </div>
-
-     <div sub-footer>
-    <h4>links</h4>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="properties.html">Properties</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-    </div>
-     
+    <div class="sub-footer">
+      <h4>Contact</h4>
+      <p>Email: M&C@gmail.com</p>
+      <p>+237 xxxxxxxxx</p>
     </div>
 
-    <div class=main-footer>
-     <p> &Copy; 2026 M&C House.All rights Reserved</p>
+    <div class="sub-footer">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="properties.html">Properties</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
     </div>
+  </div>
+
+  <div class="main-footer">
+    <p>&copy; 2026 M&C House. All rights reserved.</p>
+  </div>
 </footer>`;
 
 window.addEventListener("DOMContentLoaded", () => {

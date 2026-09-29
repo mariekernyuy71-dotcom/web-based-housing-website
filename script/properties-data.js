@@ -17,7 +17,7 @@ const propertyData = [
     priceLabel: "45k CFA",
     location: "Location: mile 2 Nkwen",
     status: "For Sale",
-    image: "../assets/unsplash_xaqsFfoEq3o.png"
+    image: "../assets/images/image-two.jpeg"
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const propertyData = [
     priceLabel: "50k CFA",
     location: "Location: mile 2 Nkwen",
     status: "For Sale",
-    image: "../assets/Frame 7164.png"
+    image: "../assets/images/image-three.jpg"
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const propertyData = [
     priceLabel: "70k CFA",
     location: "Location: Ntarikon",
     status: "For Sale",
-    image: "../assets/Frame 7167.png"
+    image: "../assets/images/image-four.jpg"
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ const propertyData = [
     priceLabel: "20M CFA",
     location: "Location: mile 6 Mankon",
     status: "For Sale",
-    image: "../assets/unsplash_ZzYtM3-zHUc.png"
+    image: "../assets/images/image-five.jpg"
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const propertyData = [
     priceLabel: "12.5M",
     location: "Location: mile 4 Nkwen",
     status: "For Sale",
-    image: "../assets/unsplash_PG8NyM_Mcts.png"
+    image: "../assets/images/image-six.jpg"
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ const propertyData = [
     priceLabel: "150M CFA",
     location: "Location: UPSTATION",
     status: "For Sale",
-    image: "../assets/Rectangle.png"
+    image: "../assets/images/image-seven.jpg"
   },
   {
     id: 8,
@@ -77,6 +77,6 @@ const propertyData = [
     priceLabel: "8M CFA",
     location: "Location: mile 6 Nkwen",
     status: "For Sale",
-    image: "../assets/unsplash_DyFjxmHt3Es.png"
+    image: "../assets/images/image-eight.jpg" 
   }
 ];
